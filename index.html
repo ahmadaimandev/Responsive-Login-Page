@@ -3,58 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <!--CSS-->
     <link rel="stylesheet" href="/assets/css/style.css">
-    <!--BoxIcon CDN-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Login Page</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/dbcb87af55.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="l-form">
-        <div class="shape1"></div>
-        <div class="shape2"></div>
-
-        <div class="form">
-            <img src="/assets/Authentication_Flatline.svg" alt="" class="form__image">
-        
-            <form action="" class="form__content">
-                <h1 class="form__title">Welcome</h1>
-        
-                <div class="form__div form__div-one">
-                    <div class="form__icon">
-                        <i class='bx bx-user-circle'></i>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="" class="sign-in-form">
+                    <h2 class="title">Sign In</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
                     </div>
-        
-                    <div class="form__div-input">
-                        <label for="" class="form__label">username</label>
-                        <input type="text" class="form__input">
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="password">
                     </div>
-                </div>
+                    <input type="submit" value="login"class="btn solid">
 
-                <div class="form__div">
-                    <div class="form__icon">
-                        <i class='bx bx-lock-alt'></i>
+                    <p class="social-text">Or Sign In With Social Platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
-        
-                    <div class="form__div-input">
-                        <label for="" class="form__label">Password</label>
-                        <input type="password" class="form__input">
-                    </div>
-                </div>
-                <a href="#" class="form__forgot">Did You Forgot Something?</a>
-
-                <input type="submit" class="form__button" value="LOGIN">
-
-                <div class="form__social">
-                    <span class="form__social-text">Or Login With</span>
-                    <a href="#" class="form__social-icon"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="form__social-icon"><i class='bx bxl-google' ></i></a>
-                    <a href="#" class="form__social-icon"><i class='bx bxl-instagram' ></i></a>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
 
+        <div class="panels-container"></div>
     </div>
-</body>
-<script src="/assets/js/main.js"></script>
-</html>
 
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
